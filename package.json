@@ -1,0 +1,15 @@
+{
+  "name": "juridik-bella",
+  "version": "1.0.0",
+  "description": "Personal website based on GatsbyJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker:run": "docker run --rm -it-w /developer -v $(pwd):/developer ubuntu:gatsby-developer",
+    "win:run": "powershell .\\scripts\\docker-run-windows.ps1",
+    "path": "echo ${PWD}"
+  },
+  "keywords": [],
+  "author": "Henrik Sommerfeld",
+  "license": "ISC"
+}

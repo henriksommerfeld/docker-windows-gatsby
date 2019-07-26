@@ -1,0 +1,1 @@
+docker run --rm -it -w /developer -v ${PWD}:/developer ubuntu:gatsby-developer
