@@ -1,1 +1,1 @@
-docker run --rm -it -w /developer -v ${PWD}:/developer ubuntu:gatsby-developer
+docker run --rm -it -w /developer -v ${PWD}:/developer -p 8000:8000 ubuntu:gatsby-developer

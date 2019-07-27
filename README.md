@@ -26,3 +26,6 @@ In the running container:
 To run the _ubuntu:gatsby-developer_ image:
 * On Linux/MacOS `npm run docker:run`.
 * On Windows: `npm run win:run`.
+
+### Watching file changes on Windows
+`npm run win:watch`

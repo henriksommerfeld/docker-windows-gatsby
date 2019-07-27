@@ -4,12 +4,19 @@
   "description": "Personal website based on GatsbyJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docker:run": "docker run --rm -it-w /developer -v $(pwd):/developer ubuntu:gatsby-developer",
+    "docker:run": "docker run --rm -it-w /developer -v $(pwd):/developer -p 8000:8000 ubuntu:gatsby-developer",
     "win:run": "powershell .\\scripts\\docker-run-windows.ps1",
-    "path": "echo ${PWD}"
+    "win:watch": ".\\scripts\\docker-windows-volume-watcher -ignoredir .git;node_modules",
+    "start": "gatsby develop -H 0.0.0.0",
+    "build": "gatsby build"
   },
   "keywords": [],
   "author": "Henrik Sommerfeld",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gatsby": "^2.13.39",
+    "gatsby-theme-blog": "^1.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }
