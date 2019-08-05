@@ -1,5 +1,5 @@
-# Personal Website for Isabel Sommerfeld
-Personal website based on GatsbyJS
+# Development Environment using Docker for Windows
+This is an attempt to create a development environment for GatsbyJS using Docker for Windows.
 
 ## Docker
 Optional Docker image to use for development. This assumes Windows, where the Docker image is used to get around Windows awkwardness.
